@@ -1,0 +1,56 @@
+<div class="wrapper">
+
+    <div class="left-box box ">
+
+        <div class="title animate__animated animate__fadeInDown">
+            <h3>Search</h3>
+        </div>
+        <div class="language animate__animated animate__fadeInDown">
+            <label>English Meaning</label>
+        </div>
+        <div class="search-label animate__animated animate__fadeInDown">
+            <label>Look up a word, learn it forever</label>
+        </div>
+        <div class="search animate__animated animate__fadeInDown" >
+            <input #word type="" placeholder="Search for something..." (keyup.enter)="getValue();onGetWord();inputAdded();  "
+                (change)="refresh()" required>
+        </div>
+
+
+    </div>
+
+    <div class="right-box box  animate__animated animate__fadeInDown" *ngIf=" isInput === true && isLoaded === true">
+        <div class="word-container animate__animated animate__fadeInDown">
+            <div class="nameOfTheWord animate__fadeIn animate__animated">
+                {{word.value }}
+            </div>
+        </div>
+
+        <div class="show animate__animated animate__fadeInDown">
+            <div class="noun">
+                <div class="title-noun">{{this.dictionaryService.noun | uppercase}}</div>
+
+                <ul>
+                    <li>{{this.dictionaryService.theNounDefinition1}}</li>
+                    <li>{{this.dictionaryService.theNounDefinition2}}</li>
+                </ul>
+            </div>
+
+
+            <div class="verb animate__animated animate__fadeInDown">
+                <div class="title-verb" >{{this.dictionaryService.verb | uppercase}}</div>
+                <ul >
+                    <li>{{this.dictionaryService.theVerbDefinition1}}</li>
+                    <li>{{this.dictionaryService.theVerbDefinition2}}</li>
+                </ul>
+            </div>
+
+            <div class="button-div">
+                <button type="button" (click)="addItem()" class="btn">Add</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

@@ -1,0 +1,28 @@
+<div class="no-word-container " *ngIf="isArrayCreated === false">
+  <div *ngIf="isArrayCreated === false" class="no-word animate__animated animate__fadeIn">
+  You have not added any word yet...
+  </div>
+  <div class="button-div animate__animated animate__fadeIn" *ngIf="isArrayCreated === false">
+    <a routerLink="dictionary" (click)="toDictionary()"><span>Add some</span></a>
+  </div>
+</div>
+
+<div class="container " *ngIf="isArrayCreated === true">
+
+  <div class="flip-card animate__animated animate__fadeIn" *ngFor="let item of array ">
+
+    <div class="flip-card-inner">
+      <div class="flip-card-front" (click)="removeItem(item)">
+        <span > {{item.name | titlecase}}</span>
+      </div>
+      <div class="flip-card-back" (click)="removeItem(item)">
+        <div >{{item.meaning |titlecase}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="random animate__animated animate__fadeIn">
+    <button routerLink="" (click)="remove()"  *ngIf="isArrayCreated === true">Clear All</button>
+  </div>
+  
+
+</div>

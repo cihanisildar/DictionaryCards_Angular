@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat+Alternates:wght@500&family=Montserrat:wght@500&family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Lora:ital,wght@1,500&family=Vina+Sans&display=swap');
+@import 'animate.css';
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Instrument+Serif&family=Lora:ital,wght@1,500&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Darumadrop+One&family=Instrument+Serif&family=Lora:ital,wght@1,500&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Dancing+Script:wght@500&family=Darumadrop+One&family=Instrument+Serif&family=Lora:ital,wght@1,500&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Dancing+Script:wght@500&family=Darumadrop+One&family=Grenze+Gotisch:wght@300&family=Instrument+Serif&family=Lora:ital,wght@1,500&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Sans&family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Sans&family=Lobster+Two:wght@700&family=Oswald:wght@700&display=swap');
+@import "~alertifyjs/build/css/alertify.min.css";
+@import "~alertifyjs/build/css/themes/bootstrap.rtl.min.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: inline;
+}
